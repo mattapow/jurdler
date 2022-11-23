@@ -4,7 +4,7 @@ include("solver.jl")
 Command line interface to jurdler solver.
 After "julia jurdler.jl" the cli arguments are ordered as follows:
 
-1) solution word - a five letter target word
+1) solution word - a five letter target word. Can be "unknown"
 2) first word - a five letter word as the first guess start
 3) verbose - `y` or `n` whether or not to be verbose as it solves (what each guess is, other possible guesses and the remaining valid words)
 4) alpha - the value of alpha in the Renyi divergence. Default is `1` for usual meausure of entropy. For alpha = infinity (i.e. minimise the maximum bin size) enter `-1`. For the frequency based method in Deedy, enter `-2`.

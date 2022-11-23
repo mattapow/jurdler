@@ -14,7 +14,7 @@ function solve(; solution=nothing, first_guess=nothing, verbose=true, α=1, n_sh
         @assert (first_guess in dictionary) "First guess not in dictionary."
     end
     first_guess === nothing ? hot_start = false : hot_start = true
-    solution === nothing ? interactive = true : interactive = false
+    solution === nothing || solution === "unknown" ? interactive = true : interactive = false
     if !interactive
         @assert (solution in targets) "Solution word not in target dictionary."
     else
