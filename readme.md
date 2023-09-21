@@ -71,7 +71,7 @@ If this takes too long, we could subsample the solution space and the guessable 
 # Performance Analysis
 I ran Jurdler on each of the 2315 words in the list solution list to see how it performed. It never fails to solve the wordle (6 or less turns) and usually gets it in 3 or 4 turns ($3.71 \pm 0.66$).
 
-![About 3 or 4 turns.](histogram.png "Frequency of number of turns required.")
+![About 3 or 4 turns.](performace/histogram.png "Frequency of number of turns required.")
 
 
 ## "Phew" words
